@@ -1,0 +1,209 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo do ícone do menu (hambúrguer) */
+.menu-toggle {
+    cursor: pointer;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    transition: transform 0.3s ease;
+}
+
+/* Estilo do Menu */
+.menu {
+    display: none;
+    background-color: #333;
+    padding: 20px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+}
+
+.menu.active {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Estilo para o conteúdo das seções */
+section {
+    padding: 20px;
+    margin-top: 80px;
+}
+
+/* Seção de Cadastro */
+.cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilo do Formulário de Cadastro */
+form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do título dentro do formulário */
+form h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo das labels e inputs */
+form label {
+    display: block;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Estilo do botão */
+form button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+/* Estilo de hover para o botão */
+form button:hover {
+    background-color: #218838;
+}
+
+/* Estilo das Ofertas */
+.ofertas {
+    padding: 40px 20px;
+}
+
+.oferta-cards {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.oferta-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.oferta-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.oferta-info h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.oferta-info p {
+    font-size: 14px;
+    color: #555;
+}
+
+.oferta-info .preco {
+    font-size: 18px;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Estilo do Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer .localizacao-contato {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+footer .localizacao, footer .contato {
+    width: 45%;
+}
+
+footer .localizacao h3, footer .contato h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer .localizacao p, footer .contato p {
+    font-size: 14px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 12px;
+}
+
+/* Adicionando estilo ao mapa (opcional) */
+#map {
+    width: 100%;
+    height: 200px;
+    background-color: #ddd;
+}

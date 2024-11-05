@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <!-- Ícone do Menu Hambúrguer -->
+        <div id="menuToggle" class="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <!-- Menu -->
+    <div id="menu" class="menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#setores">Setores</a></li>
+            <li><a href="#ofertas">Ofertas</a></li>
+            <li><a href="#cadastro">Cadastro</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </div>
+
+    <!-- Conteúdo -->
+    <section id="home" class="home">
+        <h1>Bem-vindo ao Mercado!</h1>
+        <p>Encontre os melhores produtos aqui.</p>
+    </section>
+
+    <section id="setores" class="setores">
+        <h2>Setores</h2>
+        <div class="setor">
+            <h3>Frios</h3>
+            <p>Deliciosos queijos, presuntos e muito mais.</p>
+        </div>
+        <div class="setor">
+            <h3>Frescos</h3>
+            <p>Verduras, frutas frescas direto para sua mesa.</p>
+        </div>
+    </section>
+
+    <!-- Seção de Ofertas -->
+    <section id="ofertas" class="ofertas">
+        <h2>Ofertas Especiais</h2>
+        <div class="oferta-cards">
+            <!-- Card 1 -->
+            <div class="oferta-card">
+                <img src="https://via.placeholder.com/200x150?text=Leite+Integral" alt="Leite Integral">
+                <div class="oferta-info">
+                    <h3>Leite Integral</h3>
+                    <p>Leite fresquinho, direto da fazenda. Ótimo para toda a família!</p>
+                    <p class="preco">R$ 3,99</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="oferta-card">
+                <img src="https://via.placeholder.com/200x150?text=Queijo+Minas" alt="Queijo Minas">
+                <div class="oferta-info">
+                    <h3>Queijo Minas</h3>
+                    <p>Queijo minas frescal, ideal para sanduíches ou tábuas de frios.</p>
+                    <p class="preco">R$ 12,99</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="oferta-card">
+                <img src="https://via.placeholder.com/200x150?text=Maçã+Fuji" alt="Maçã Fuji">
+                <div class="oferta-info">
+                    <h3>Maçã Fuji</h3>
+                    <p>Maçãs frescas e crocantes, perfeitas para um lanche saudável.</p>
+                    <p class="preco">R$ 6,49</p>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="oferta-card">
+                <img src="https://via.placeholder.com/200x150?text=Arroz+Branco" alt="Arroz Branco">
+                <div class="oferta-info">
+                    <h3>Arroz Branco</h3>
+                    <p>Arroz branco de qualidade, ideal para o seu almoço.</p>
+                    <p class="preco">R$ 4,99</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cadastro" class="cadastro">
+        <h2>Cadastro</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="localizacao-contato">
+            <div class="localizacao">
+                <h3>Localização</h3>
+                <p>Rua Exemplo, 123 - Bairro, Cidade, Estado</p>
+                <div id="map">[Mapa]</div>
+            </div>
+           
